@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Begins</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(rgb(248, 169, 96), rgb(138, 240, 143), rgb(139, 139, 233));
+            ;
+        }
+
+        #start-celebrate {
+            padding: 25px;
+            margin: 10px;
+            color: white;
+            border-radius: 15px;
+            text-decoration: none;
+            font-family: cursive;
+            cursor: pointer;
+        }
+
+        @keyframes glowing {
+            0% {
+                background-color: #31c1e6;
+                box-shadow: 0 0 5px #9ce1eb;
+            }
+
+            50% {
+                background-color: #f8285c;
+                box-shadow: 0 0 20px #f168cf;
+            }
+
+            100% {
+                background-color: #b6dd2a;
+                box-shadow: 0 0 5px #e0f180;
+            }
+        }
+
+        #start-celebrate {
+            animation: glowing 1300ms infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="first-page/index.html"><button id="start-celebrate">Start Your Celebrations</button></a>
+    </div>
+</body>
+
+</html>
